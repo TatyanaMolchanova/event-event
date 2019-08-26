@@ -15,22 +15,22 @@
 				<a href="#" class="logo">Events</a>
 				<ul class="menu">
 					<li class="menu__item">
-						<a href="#" class="menu__link">
+						<a href="#about" class="menu__link">
 							About
 						</a>
 					</li>
 					<li class="menu__item">
-						<a href="#" class="menu__link">
+						<a href="#jury" class="menu__link">
 							Jury
 						</a>
 					</li>
 					<li class="menu__item">
-						<a href="#" class="menu__link">
+						<a href="#competitors" class="menu__link">
 							Competitors
 						</a>
 					</li>
 					<li class="menu__item">
-						<a href="#" class="menu__link">
+						<a href="#contact" class="menu__link">
 							Contact us
 						</a>
 					</li>
@@ -40,13 +40,18 @@
 	</header>
 	<main>
 		<section class="cover">
+		<div class="slider">
+			<div class="slide" style="background-image: url('img/event1.jpg');"></div>
+			<div class="slide" style="background-image: url('https://weraveyou.com/wp-content/uploads/2016/05/ushuaia_closing_party_ibiza_2016_featured.jpg');"></div>
+			<div class="slide" style="background-image: url('https://content.phuket101.net/wp-content/uploads/20180930211842/paradise-beach-full-moon-party.jpg');"></div>
+		</div>
 			<div class="container flex flex--column">
 				<h1 class="cover__title">Are you ready for the Battle?</h1>
 				<p class="cover__subtitle">The clash between graphic designers</p>
 				<a href="#" class="btn btn--transparent">Download Our Case Study</a>
 			</div>
 		</section>
-		<section class="section">
+		<section class="section" id="about">
 			<div class="container">
 				<h2 class="section__title section__title--brand">Design Battles</h2>
 				<div class="section__subtitle">
@@ -121,15 +126,15 @@
 				</div>
 			</div>
 		</section>
-		<section class="section section--gradient">
+		<section class="section section--gradient"  id="competitors">
 			<div class="container">
 				<div class="section__heading">
 					<h2 class="section__title">They already said Battles
 					</h2>
 					<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada. Estibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
 				</div>
-				<div class="users">
-					<div class="user">
+				<div class="users" id="competitorsUsers">
+					<!-- <div class="user">
 						<div class="user__img-box">
 							<img src="img/event2.jpg" alt="" class="user__img">
 						</div>
@@ -149,8 +154,8 @@
 						</div>
 						<div class="user__name">John Stone</div>
 						<div class="user__pos">Creative Director at Amazing Game</div>
-					</div>
-					<div class="user">
+					</div> -->
+					<!-- <div class="user">
 						<div class="user__img-box">
 							<img src="img/event5.jpg" alt="" class="user__img">
 						</div>
@@ -170,7 +175,7 @@
 						</div>
 						<div class="user__name">John Stone</div>
 						<div class="user__pos">Creative Director at Amazing Game</div>
-					</div>
+					</div> -->
 				</div>
 				<div class="section__heading">
 					<h2 class="section__title">Countdown
@@ -178,19 +183,19 @@
 				</div>
 				<div class="countdown">
 					<div class="countdown__item">
-						<div class="countdown__number">37</div>
+						<div class="countdown__number" id="days">00</div>
 						<div class="countdown__text">days</div>
 					</div>
 					<div class="countdown__item">
-						<div class="countdown__number">13</div>
+						<div class="countdown__number" id="hours">00</div>
 						<div class="countdown__text">hours</div>
 					</div>
 					<div class="countdown__item">
-						<div class="countdown__number">45</div>
+						<div class="countdown__number" id="minutes">00</div>
 						<div class="countdown__text">minutes</div>
 					</div>
 					<div class="countdown__item">
-						<div class="countdown__number">26</div>
+						<div class="countdown__number" id="seconds">00</div>
 						<div class="countdown__text">seconds</div>
 					</div>
 				</div>
@@ -226,14 +231,14 @@
 				</ul>
 			</div>
 		</section>
-		<section class="section section--pink">
+		<section class="section section--pink" id="jury">
 			<div class="container">
 				<div class="section__heading">
 					<h2 class="section__title">Jury 2017
 					</h2>
 				</div>
-				<div class="users">
-					<div class="user">
+				<div class="users" id="usersJury">
+					<!-- <div class="user">
 						<div class="user__img-box user__img-box--round">
 							<img src="img/event8.jpg" alt="" class="user__img">
 						</div>
@@ -253,12 +258,12 @@
 						</div>
 						<div class="user__name">John Stone</div>
 						<div class="user__pos">Creative Director at Amazing Game</div>
-					</div>
+					</div> -->
 				</div>
 
 			</div>
 		</section>
-		<section class="section">
+		<section class="section"  id="contact">
 			<div class="container container--sm">
 				<div class="section__heading">
 					<h2 class="section__title">Contact Us
@@ -328,5 +333,11 @@
 			</ul>
 		</div>
 	</footer>
+
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/script2.js"></script>
+<!-- <script src="js/scripts.js"></script> -->
 </body>
 </html>
