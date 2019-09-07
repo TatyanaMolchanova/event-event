@@ -136,55 +136,14 @@ $(document).ready(function(){
 		// console.log(xhr);
 	};
 
-	// (function loadUsers2() {
+	let sound = document.querySelector('audio');
 
-	// 	let xhr = new XMLHttpRequest();
+	$('.toggler').on('click', function(e) {
+		e.preventDefault();
 
-	// 	xhr.open('GET', 'https://reqres.in/api/users?page=2');
-
-	// 	xhr.send();
-
-	// 	xhr.responseType = 'json';
-
-
-	// 	xhr.onerror = function() {
-	// 	  alert("Запрос не удался");
-	// 	};
-
-
-	// 	xhr.onload = function() {
-	// 	  if (xhr.status != 200) { // анализируем HTTP-статус ответа, если статус не 200, то произошла ошибка
-	// 	    alert(`Ошибка ${xhr.status}: ${xhr.statusText}`); // Например, 404: Not Found
-	// 	  } else { // если всё прошло гладко, выводим результат
-	// 	  	// console.log(xhr.response);
-	// 	    // alert(`Готово, получили ${xhr.response.length} байт`); // response -- это ответ сервера
-	// 	  // console.log(xhr.response);
-	// 	   // console.log(xhr.response.data);
-
-			
-	// 	let target = document.getElementById('usersJury');
-	// 	let users = xhr.response.data.splice(0, 3);
-
-
-	// 	users.forEach(function(user) {
-	// 	   		// console.log(user.first_name, user.last_name);
-
-	// 	   		let html = `<div class="user">
-	// 					<div class="user__img-box user__img-box--round">
-	// 						<img src="${user.avatar}" alt="" class="user__img">
-	// 					</div>
-	// 					<div class="user__name">${user.first_name} ${user.last_name}</div>
-	// 					<div class="user__pos">${user.email}</div>
-	// 				</div>`;
-
-	// 			target.innerHTML = target.innerHTML+ html;
-	// 	   });
-	// 	  }
-	// 	};
-
-	// 	console.log(xhr);
-	// })();
-
+		$('body').toggleClass('menu-opened');
+		sound.play();
+	})
 
 
 
